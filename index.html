@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <table id="Timeblocks" class="table table-stripped">
+        <thead class="thead-dark">
+          <tr style="text-align: center;">
+           <th scope="col">Hour</th>
+           <th scope="col">Event</th>
+           <th scope="col">Save</th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr id="00:00">
+           <th scope="row">00:00</th>
+           <td>
+             <input id="input0" type="text">
+           </td>
+           <td>
+            <button id="button0" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+           </td>
+         </tr>
+         <tr id="01:00">
+          <th scope="row">01:00</th>
+          <td>
+            <input id="input1" type="text">
+          </td>
+          <td>
+            <button id="button1" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="02:00">
+          <th scope="row">02:00</th>
+          <td>
+            <input id="input2" type="text">
+          </td>
+          <td>
+            <button id="button2" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="03:00">
+          <th scope="row">03:00</th>
+          <td>
+            <input id="input3" type="text">
+          </td>
+          <td>
+            <button id="button3" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="04:00">
+          <th scope="row">04:00</th>
+          <td>
+            <input id="input4" type="text">
+          </td>
+          <td>
+            <button id="button4" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="05:00">
+          <th scope="row">05:00</th>
+          <td>
+            <input id="input5" type="text">
+          </td>
+          <td>
+            <button id="button5" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="06:00">
+          <th scope="row">06:00</th>
+          <td>
+            <input id="input6" type="text">
+          </td>
+          <td>
+            <button id="button6" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="07:00">
+          <th scope="row">07:00</th>
+          <td>
+            <input id="input7" type="text">
+          </td>
+          <td>
+            <button id="button7" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="08:00">
+          <th scope="row">08:00</th>
+          <td>
+            <input id="input8" type="text">
+          </td>
+          <td>
+            <button id="button8" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="09:00">
+          <th scope="row">09:00</th>
+          <td>
+            <input id="input9" type="text">
+          </td>
+          <td>
+            <button id="button9" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="10:00">
+          <th scope="row">10:00</th>
+          <td>
+            <input id="input10" type="text">
+          </td>
+          <td>
+            <button id="button10" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="11:00">
+          <th scope="row">11:00</th>
+          <td>
+            <input id="input11" type="text">
+          </td>
+          <td>
+            <button id="button11" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="12:00">
+          <th scope="row">12:00</th>
+          <td>
+            <input id="input12" type="text">
+          </td>
+          <td>
+            <button id="button12" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="13:00">
+          <th scope="row">13:00</th>
+          <td>
+            <input id="input13" type="text">
+          </td>
+          <td>
+            <button id="button13" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="14:00">
+          <th scope="row">14:00</th>
+          <td>
+            <input id="input14" type="text">
+          </td>
+          <td>
+            <button id="button14" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="15:00">
+          <th scope="row">15:00</th>
+          <td>
+            <input id="input15" type="text">
+          </td>
+          <td>
+            <button id="button15" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="16:00">
+          <th scope="row">16:00</th>
+          <td>
+            <input id="input16" type="text">
+          </td>
+          <td>
+            <button id="button16" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="17:00">
+          <th scope="row">17:00</th>
+          <td>
+            <input id="input17" type="text">
+          </td>
+          <td>
+            <button id="button17" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="18:00">
+          <th scope="row">18:00</th>
+          <td>
+            <input id="input18" type="text">
+          </td>
+          <td>
+            <button id="button18" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="19:00">
+          <th scope="row">19:00</th>
+          <td>
+            <input id="input19" type="text">
+          </td>
+          <td>
+            <button id="button19" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="20:00">
+          <th scope="row">20:00</th>
+          <td>
+            <input id="input20" type="text">
+          </td>
+          <td>
+            <button id="button20" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="21:00">
+          <th scope="row">21:00</th>
+          <td>
+            <input id="input21" type="text">
+          </td>
+          <td>
+            <button id="button21" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="22:00">
+          <th scope="row">22:00</th>
+          <td>
+            <input id="input22" type="text">
+          </td>
+          <td>
+            <button id="button22" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+         <tr id="23:00">
+          <th scope="row">23:00</th>
+          <td>
+            <input id="input23" type="text">
+          </td>
+          <td>
+            <button id="button23" type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+          </td>
+         </tr>
+       </tbody>
+      </table>
+      <!-- Timeblocks go here -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
