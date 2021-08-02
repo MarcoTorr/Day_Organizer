@@ -1,6 +1,6 @@
 var currentDate = moment();
 var tableBody = $('#tableBody');
-var currentHour = currentDate.format('hh');
+var currentHour = currentDate.format('HH');
 var currentMinute= currentDate.format('mm');
 var timeNumbers = ((Number(currentMinute))/60) + Number(currentHour);
 var tableHour = $('*tr');
